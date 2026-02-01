@@ -1,14 +1,23 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import{getGlobalMarketData, getTrendingCrypto} from "../../services/api/coingecko.js"
+import{getglobalMarketData, getTrendingCrypto} from "../../services/api/coingecko.js"
 
 
 export const fatchGlobalData = createAsyncThunk(
     'market/featchGlobal',
     async()=>{
-        const response = await getGlobalMarketData();
+        const response = await getglobalMarketData();
         return response;
     }
 )
+
+export const fatchTrending = createAsyncThunk(
+    'market/fatchTrending',
+    async()=>{
+        const response = await getTrendingCrypto();
+        return response
+    }
+)
+
 
 
 const marketSlice = createSlice({

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { fatchCryptoList } from '../../store/slices/cryptoSlice.js';
+import { fatchCryptoList } from '../../store/slice/cryptoSlice.js';
 import Table from '../../components/common/Table/Table.jsx';
-import Loader from '../../components/common/Loader/Loader.js';
+import Loader from '../../components/common/Loder/Loder.jsx';
 import SearchBar from '../../components/crypto/SearchBar/SearchBar.jsx';
 import { formatCurrency, formatCompactNumber, formatPercentage } from '../../utils/formatters/numberFormatter.js';
 import { filterBySearch } from '../../utils/helpers/filtering.js';

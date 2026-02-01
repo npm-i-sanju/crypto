@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme} from "../../../store/slice/themeSlice.js";
 import Navigation from "./Navigation.jsx";
-
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 
 const Header = ()=>{

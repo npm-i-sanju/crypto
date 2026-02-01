@@ -14,7 +14,7 @@ const Home =()=>{
 const dispatch = useDispatch();
 const navigate = useNavigate();
 const {list , loading, error}= useSelector((state)=>state.crypto)
-const {coin: watchlistCoins}= useSelector((state)=>state.watchlist)
+const {coins: watchlistCoins}= useSelector((state)=>state.watchlist)
 const [filteredlist, setFilteredlist]= useState([])
 
 useEffect(()=>{

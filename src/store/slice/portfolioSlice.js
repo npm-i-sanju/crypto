@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {saveToLocalStorage, loadFormLocalStorage} from '../../services/storage/localStorage.js';
+import {saveToLocalStorage, loadFromLocalStorage} from '../../services/storage/localStorage.js';
 
 
 const STORAGE_KEY = 'crypto_portfolio';
@@ -7,7 +7,7 @@ const STORAGE_KEY = 'crypto_portfolio';
 const portfolioSlice = createSlice({
     name: 'portfolio',
     initialState: {
-        holdings: loadFormLocalStorage(STORAGE_KEY) || [],
+        holdings: loadFromLocalStorage(STORAGE_KEY) || [],
         totalValue: 0,
         totalCost: 0,
         portfitLoss: 0
