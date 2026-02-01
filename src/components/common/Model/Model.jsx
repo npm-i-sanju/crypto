@@ -29,13 +29,6 @@ return(
         <div>{children}</div>
       </div>
     </div>
-)
-
-
-
-
-
-
-}
+)}
 
 export default Model;
