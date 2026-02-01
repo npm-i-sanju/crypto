@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { removeFromWatchlist } from '../../store/slices/watchlistSlice';
-import { getCryptoList } from '../../services/api/coingecko';
-import CryptoCard from '../../components/crypto/CryptoCard/CryptoCard';
-import Loader from '../../components/common/Loader/Loader';
+import { removeFromWatchlist } from '../../store/slice/watchlistSlice.js';
+import { getCryptoList } from '../../services/api/coingecko.js';
+import CryptoCard from '../../components/crypto/CryptoCard/CryptoCard.jsx';
+import Loader from '../../components/common/Loder/Loder.jsx';
 import toast from 'react-hot-toast';
 
 const Watchlist = () => {

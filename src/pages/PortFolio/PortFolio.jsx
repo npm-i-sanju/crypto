@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addHolding, removeHolding } from '../../store/slices/portfolioSlice';
-import PortfolioSummary from '../../components/portfolio/PortfolioSummary/PortfolioSummary';
-import PortfolioChart from '../../components/portfolio/PortfolioChart/PortfolioChart';
-import TransactionForm from '../../components/portfolio/TransactionForm/TransactionForm';
-import Modal from '../../components/common/Modal/Modal';
-import Button from '../../components/common/Button/Button';
-import Table from '../../components/common/Table/Table';
-import { formatCurrency } from '../../utils/formatters/numberFormatter';
+import { addHolding, removeHolding } from '../../store/slice/portfolioSlice.js';
+import PortfolioSummary from '../../components/protFolio/PortFolioSummary/ProtFolioSummary.jsx';
+import PortfolioChart from '../../components/protFolio/PortFolioChart/PortFolioChart.jsx';
+import TransactionForm from '../../components/protFolio/TransactionForm/TransactionForm.jsx';
+import Modal from '../../components/common/Model/Model.jsx';
+import Button from '../../components/common/Button/Button.jsx';
+import Table from '../../components/common/Table/Table.jsx';
+import { formatCurrency } from '../../utils/formatters/numberFormatter.js';
 import { FiPlus, FiTrash2 } from 'react-icons/fi';
 import toast from 'react-hot-toast';
 

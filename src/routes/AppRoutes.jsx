@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
-import Markets from '../pages/Markets/Markets';
+import Markets from '../pages/Markets/Market.jsx';
 import CryptoDetail from '../pages/CryptoDetail/CryptoDetail';
 import Portfolio from "../pages/PortFolio/PortFolio.jsx"
 import Watchlist from "../pages/WatchList/WatchList.jsx"

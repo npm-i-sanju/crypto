@@ -3,8 +3,8 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import {store} from './store'
 import { Toaster } from 'react-hot-toast'
-import Headers from './components/layout/Header.jsx'
-import Footer from './components/layout/Footer.jsx'
+import Headers from './components/layout/Header/Header.jsx'
+import Footer from './components/layout/Footer/Footer.jsx'
 import AppRouter from './routes/AppRoutes.jsx'
 
 

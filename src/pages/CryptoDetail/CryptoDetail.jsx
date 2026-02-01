@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { fatchCryptoDetails, fetchCryptoChart } from '../../store/slices/cryptoSlice';
-import { addToWatchlist, removeFromWatchlist } from '../../store/slices/watchlistSlice';
-import Loader from '../../components/common/Loader/Loader';
-import Button from '../../components/common/Button/Button';
-import PriceChart from '../../components/crypto/CryptoChart/PriceChart';
-import VolumeChart from '../../components/crypto/CryptoChart/VolumeChart';
-import CryptoDetails from '../../components/crypto/CryptoDetails/CryptoDetails';
-import { formatCurrency, formatPercentage } from '../../utils/formatters/numberFormatter';
+import {fatchCryptoDetails, fatchCryptoChart  } from '../../store/slice/cryptoSlice.js';
+import { addToWatchlist, removeFromWatchlist } from '../../store/slice/watchlistSlice.js';
+import Loader from '../../components/common/Loder/Loder.jsx';
+import Button from '../../components/common/Button/Button.jsx';
+import PriceChart from '../../components/crypto/CryptoChart/PriceChart.jsx';
+import VolumeChart from '../../components/crypto/CryptoChart/VolumeChart.jsx';
+import CryptoDetails from '../../components/crypto/CryptoDetails/CryptoDetails.jsx';
+import { formatCurrency, formatPercentage } from '../../utils/formatters/numberFormatter.js';
 import { FiArrowLeft, FiStar } from 'react-icons/fi';
 import toast from 'react-hot-toast';
 
@@ -22,7 +22,7 @@ const CryptoDetail = () => {
 
   useEffect(() => {
     dispatch(fatchCryptoDetails(id));
-    dispatch(fetchCryptoChart({ id, days: chartPeriod }));
+    dispatch(fatchCryptoChart({ id, days: chartPeriod }));
   }, [dispatch, id, chartPeriod]);
 
   const isInWatchlist = watchlistCoins.some((c) => c.id === id);

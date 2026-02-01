@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { fatchCryptoList } from '../../store/slices/cryptoSlice';
-import Table from '../../components/common/Table/Table';
-import Loader from '../../components/common/Loader/Loader';
-import SearchBar from '../../components/crypto/SearchBar/SearchBar';
-import { formatCurrency, formatCompactNumber, formatPercentage } from '../../utils/formatters/numberFormatter';
-import { filterBySearch } from '../../utils/helpers/filtering';
+import { fatchCryptoList } from '../../store/slices/cryptoSlice.js';
+import Table from '../../components/common/Table/Table.jsx';
+import Loader from '../../components/common/Loader/Loader.js';
+import SearchBar from '../../components/crypto/SearchBar/SearchBar.jsx';
+import { formatCurrency, formatCompactNumber, formatPercentage } from '../../utils/formatters/numberFormatter.js';
+import { filterBySearch } from '../../utils/helpers/filtering.js';
 
 const Markets = () => {
   const dispatch = useDispatch();
